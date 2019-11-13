@@ -29,6 +29,14 @@ export default {
    */
   plugins: [],
   /*
+   ** TypeScript configuration
+   */
+  typescript: {
+    typeCheck: {
+      eslint: true
+    }
+  },
+  /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
@@ -47,6 +55,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     extend(config, ctx) {}
   }
-}
+};
